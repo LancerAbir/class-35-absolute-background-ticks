@@ -1,0 +1,155 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+alignright {
+    float: right;
+    margin-left: 15px;
+}
+aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="url"], textarea {
+    border: none;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+input[type="submit"], button[type="submit"] {
+    border: medium none;
+    color: #fff;
+    margin: 0;
+    padding: 15px 30px;
+    width: auto;
+}
+a:focus, input:focus, textarea:focus, button:focus {
+    outline: 0 solid
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+} 
+
+*/*
+font {
+   font-family: 'Roboto', sans-serif;
+   font-family: 'Open Sans', sans-serif;
+}
+*/*
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7;
+}
+a:hover {
+    text-decoration: none;
+}
+
+
+.section-absolute-bg {
+  background-color: #ddd;
+  background-image: url("img/bg-01.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  z-index: 2;
+}
+.absolute-bg-2 {background-image: url(img/bg-02.jpg);}
+
+
+.section-padding {
+    background-color: #222931;
+    padding: 100px 0;
+    position: relative;
+}
+.box-content {
+    color: #c1c1c1;
+    font-size: 14px;
+    line-height: 1.7;
+    padding-left: 40px;
+    padding-right: 70px;
+    position: relative;
+}
+.box-content h3 {
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.readmore-btn {
+    border: 1px solid;
+    color: #fff;
+    display: inline-block;
+    font-weight: 700;
+    margin-top: 20px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+.box-content *::before {
+    background-color: #767a7f;
+    content: "";
+    height: 75px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 2px;
+}
+.section-absolute-bg.absolute-bg-2 {
+    left: 0;
+    right: auto;
+}
+.absolute-bg-left .box-content {
+    margin-left: 65px;
+}
+.section-absolute-bg::after {
+    background-color: #000;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.box-content::after {
+   border-bottom: 10px solid transparent;
+   border-left: 30px solid #222931;
+   border-top: 10px solid transparent;
+   content: "";
+   height: 0;
+   margin-top: -5px;
+   position: absolute;
+   right: -45px;
+   top: 46%;
+   width: 0;
+   z-index: 3;
+}
+
+.absolute-bg-left .box-content::after {
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid transparent;
+  content: "";
+  height: 0;
+  left: -110px;
+  margin-top: -5px;
+  position: absolute;
+  top: 46%;
+  transform: rotate(180deg);
+  width: 0;
+  z-index: 3;
+}
